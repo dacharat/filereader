@@ -1,0 +1,12 @@
+
+/bin/
+.classpath
+.project
+.settings
+
+*.class
+*.swp
+bin/
+build/
+out/
+solution/

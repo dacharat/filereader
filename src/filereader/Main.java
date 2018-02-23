@@ -8,5 +8,6 @@ public class Main {
 		tt.measureAndPrint(new AppendToString(file));
 		tt.measureAndPrint(new AppendToStringBuilder(file));
 		tt.measureAndPrint(new AppendToBufferedReader(file));
+		
 	}
 }

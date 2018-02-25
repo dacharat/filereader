@@ -1,7 +1,7 @@
 package filereader;
 
 /**
- * TaskTimer class that will compute and print the elapsed time for any task,
+ * TaskTimer class that will compute and print the elapsed time for any task.
  * 
  * @author dacharat Pankong
  *
@@ -13,7 +13,7 @@ public class TaskTimer {
 	/**
 	 * Count the time and print the result.
 	 * 
-	 * @param r
+	 * @param r is object that wnt to count time.
 	 */
 	public void measureAndPrint(Runnable r) {
 		sw.start();

@@ -1,8 +1,7 @@
 package filereader;
 
 /**
- * This class will read file one character per time and count the time that use
- * for read file.
+ * This class will read file one character per time.
  * 
  * @author Dacharat Pankong
  *
@@ -23,7 +22,7 @@ public class AppendToString implements Runnable {
 	}
 
 	/**
-	 * Start read file and count the time.
+	 * Start read file.
 	 */
 	@Override
 	public void run() {
@@ -31,7 +30,7 @@ public class AppendToString implements Runnable {
 	}
 
 	/**
-	 * Return number of character was read and time use.
+	 * Return number of character was read.
 	 */
 	@Override
 	public String toString() {

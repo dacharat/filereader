@@ -5,9 +5,9 @@ and got these results:
 
 Task                                          |  Time
 ----------------------------------------------|-------:
-Read file 1-char at a time to String          | 0.931797 sec
-Read file 1-char at a time to StringBuilder   | 0.020275 sec
-Read file line at a time using BufferedReader | 0.035683 sec
+Read file 1-char at a time to String          | 0.929041 sec
+Read file 1-char at a time to StringBuilder   | 0.005453 sec
+Read file line at a time using BufferedReader | 0.029057 sec
 
 ## Explanation of Results
 

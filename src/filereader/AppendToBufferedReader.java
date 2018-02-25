@@ -1,26 +1,40 @@
 package filereader;
 
-public class AppendToBufferedReader implements Runnable{
+/**
+ * This class will read file by using BufferedReader and count the time that use
+ * for read file.
+ * 
+ * @author Dacharat Pankong
+ *
+ */
+public class AppendToBufferedReader implements Runnable {
 
-	private Stopwatch sw = new Stopwatch();
 	private String filename;
 	private String data;
-	private double time;
-	
+
+	/**
+	 * Initialize file that you want to read.
+	 * 
+	 * @param filename
+	 *            is file that you want to read.
+	 */
 	public AppendToBufferedReader(String filename) {
 		this.filename = filename;
 	}
-	
+
+	/**
+	 * Start read file and count the time.
+	 */
 	@Override
 	public void run() {
-		sw.start();
 		data = ReadFile.readFileToBufferedReader(filename);
-		sw.stop();
-		time = sw.getElapsed();
 	}
-	
+
+	/**
+	 * Return number of character was read and time use. 
+	 */
 	@Override
 	public String toString() {
-		return String.format("Read %d chars in %f sec.\n", data.length(), time);
+		return String.format("Read %d chars in", data.length());
 	}
 }
